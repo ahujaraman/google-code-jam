@@ -1,4 +1,3 @@
-ans = ''
 def solve_maze():
     global ans 
     ans = ''
@@ -9,9 +8,9 @@ def solve_maze():
             ans+='E'
         else:
             ans+='S'
-    return
--
+    return ans
+
 T = int(input())
 for i in range(1,T+1):
-    solve_maze()
-    print("Case #{0}: {1}".format(i,ans))
+    result = solve_maze()
+    print("Case #{0}: {1}".format(i,result))
